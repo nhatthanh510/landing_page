@@ -1,10 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FiX, FiMenu } from 'react-icons/fi'
-import logoSrc from '../../assets/images/logo/logo.png'
-import logoLight from '../../assets/images/logo/logo-light.png'
 import logoSymbolLight from '../../assets/images/logo/logo-symbol-light.png'
-import logoSymbolDark from '../../assets/images/logo/logo-symbol-dark.png'
-import logoDark from '../../assets/images/logo/logo-dark.png'
 
 const Header = (props) => {
   const menuTrigger = () => {
