@@ -5,7 +5,7 @@ const PageHelmet = (props) => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>{props.pageTitle} || React Multipurpose Template </title>
+        <title>{props.pageTitle}</title>
         <meta
           name="description"
           content="React Template will create that various landing Template, Creative Agency, And Corporate Website ."

@@ -62,7 +62,7 @@ const Home = () => {
   const PostList = BlogContent.slice(0, 3)
   return (
     <>
-      <Helmet pageTitle="Paralax" />
+      <Helmet pageTitle="Up grow" />
 
       <Header
         headertransparent="header--transparent header--fixed"
