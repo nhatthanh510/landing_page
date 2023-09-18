@@ -1,25 +1,14 @@
 import React from 'react'
 import PageHelmet from '../component/common/Helmet'
 import { FiHeadphones, FiMail, FiMapPin } from 'react-icons/fi'
-import GoogleMapReact from 'google-map-react'
 import ContactTwo from '../elements/contact/ContactTwo'
-import BrandTwo from '../elements/BrandTwo'
 import ScrollToTop from 'react-scroll-up'
 import { FiChevronUp } from 'react-icons/fi'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 import bg17 from '../assets/images/bg/bg-image-17.jpg'
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>
-
 const Contact = (props) => {
-  const geo = props && {
-    center: {
-      lat: 59.95,
-      lng: 30.33,
-    },
-    zoom: 11,
-  }
   return (
     <>
       <PageHelmet pageTitle="Contact" />
@@ -43,10 +32,7 @@ const Contact = (props) => {
             <div className="col-lg-12">
               <div className="rn-page-title text-center pt--100">
                 <h2 className="title theme-gradient">Contact With Us</h2>
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text.
-                </p>
+                <p>Got questions or feedback? We'd love to hear from you!</p>
               </div>
             </div>
           </div>
@@ -67,10 +53,7 @@ const Contact = (props) => {
                 <div className="inner">
                   <h4 className="title">Contact With Phone Number</h4>
                   <p>
-                    <a href="tel:+012 345 365 456">+012 345 365 456</a>
-                  </p>
-                  <p>
-                    <a href="tel:+876 323 652 984">+876 323 652 984</a>
+                    <a href="tel:+012 345 365 456">+62 838 9495 0635</a>
                   </p>
                 </div>
               </div>
@@ -86,10 +69,9 @@ const Contact = (props) => {
                 <div className="inner">
                   <h4 className="title">Email Address</h4>
                   <p>
-                    <a href="mailto:admin@gmail.com">admin@gmail.com</a>
-                  </p>
-                  <p>
-                    <a href="mailto:example@gmail.com">example@gmail.com</a>
+                    <a href="mailto:rmh.business.kaarey@gmail.com">
+                      rmh.business.kaarey@gmail.com
+                    </a>
                   </p>
                 </div>
               </div>
@@ -105,8 +87,8 @@ const Contact = (props) => {
                 <div className="inner">
                   <h4 className="title">Location</h4>
                   <p>
-                    5678 Bangla Main Road, cities 580 <br /> GBnagla, example
-                    54786
+                    Perum. Mangunjaya Indah II, Bekasi, East Java, Indonesia.
+                    17510
                   </p>
                 </div>
               </div>
@@ -124,7 +106,7 @@ const Contact = (props) => {
       {/* End Contact Page Area  */}
 
       {/* Start Contact Map  */}
-      <div className="rn-contact-map-area position-relative">
+      {/* <div className="rn-contact-map-area position-relative">
         <div style={{ height: '650px', width: '100%' }}>
           <GoogleMapReact defaultCenter={geo.center} defaultZoom={geo.zoom}>
             <AnyReactComponent
@@ -134,11 +116,11 @@ const Contact = (props) => {
             />
           </GoogleMapReact>
         </div>
-      </div>
+      </div> */}
       {/* End Contact Map  */}
 
       {/* Start Brand Area */}
-      <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
+      {/* <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -146,7 +128,7 @@ const Contact = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End Brand Area */}
 
       {/* Start Back To Top */}

@@ -1,68 +1,35 @@
 import { Parallax } from 'react-parallax'
 import ScrollToTop from 'react-scroll-up'
-import { Link } from 'react-router-dom'
 import { FiChevronUp } from 'react-icons/fi'
 import Helmet from '../component/common/Helmet'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
-import BrandTwo from '../elements/BrandTwo'
-import BlogContent from '../elements/blog/BlogContent'
 import ServiceList from '../elements/service/ServiceList'
-import Testimonial from '../elements/Testimonial'
-import CounterOne from '../elements/counters/CounterOne'
 import sliderImage from '../assets/images/bg/bg-image-11.jpg'
 import image1 from '../assets/images/bg/paralax/bg-image-2.jpg'
-import image2 from '../assets/images/bg/paralax/bg-image-3.jpg'
-import image3 from '../assets/images/bg/paralax/bg-image-4.jpg'
-import image6 from '../assets/images/bg/paralax/bg-image-6.jpg'
-import image7 from '../assets/images/bg/paralax/bg-image-7.jpg'
-import image8 from '../assets/images/bg/paralax/bg-image-8.jpg'
-
-import blog1 from '../assets/images/blog/blog-01.jpg'
-import blog2 from '../assets/images/blog/blog-02.jpg'
-import blog3 from '../assets/images/blog/blog-03.jpg'
-
-const imageMap = {
-  blog1: blog1,
-  blog2: blog2,
-  blog3: blog3,
-}
 
 const SlideList = [
   {
     textPosition: 'text-center',
     category: '',
-    title: 'Marketing',
+    title: 'Elevate Your Digital Presence and Level Up Your Business',
     description:
-      'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
+      'Scale up your business in no time with Upgrow Software Studio now!',
     buttonText: 'Contact Us',
     buttonLink: '/contact',
   },
 ]
 
-const PortfolioList = [
-  {
-    image: 'image-1',
-    category: 'Development',
-    title: 'Getting tickets to the big show',
-  },
-  {
-    image: 'image-2',
-    category: 'Development',
-    title: 'Getting tickets to the big show',
-  },
-  {
-    image: 'image-3',
-    category: 'Development',
-    title: 'Getting tickets to the big show',
-  },
-]
-
 const Home = () => {
-  const PostList = BlogContent.slice(0, 3)
+  const sendEmail = (e) => {
+    e.preventDefault()
+    const email = 'rmh.business.kaarey@gmail.com'
+    window.location.href = `mailto:${email}`
+  }
+
   return (
     <>
-      <Helmet pageTitle="Up grow" />
+      <Helmet pageTitle="Upgrow Software Studio" />
 
       <Header
         headertransparent="header--transparent header--fixed"
@@ -89,13 +56,25 @@ const Home = () => {
                       ) : (
                         ''
                       )}
+                      <p className="description">
+                        We specialize in turning your ideas into powerful
+                        software solutions and stunning websites.
+                      </p>
                       {value.description ? (
-                        <p className="description">{value.description}</p>
+                        <p
+                          className="interest"
+                          style={{
+                            fontWeight: 800,
+                            marginTop: '15px',
+                          }}
+                        >
+                          {value.description}
+                        </p>
                       ) : (
                         ''
                       )}
                       {value.buttonText ? (
-                        <div className="slide-btn">
+                        <div className="slide-btn" onClick={sendEmail}>
                           <a
                             className="rn-button-style--2 btn-solid"
                             href={`${value.buttonLink}`}
@@ -123,10 +102,10 @@ const Home = () => {
             <div className="row align-items-center">
               <div className="col-lg-12">
                 <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
-                  <h2>Our Service</h2>
+                  <h2>Our Services</h2>
                   <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration.
+                    Discover our tailored services designed just for you. <br />
+                    Let's make your vision a reality.
                   </p>
                 </div>
               </div>
@@ -137,8 +116,21 @@ const Home = () => {
       </Parallax>
       {/* End Service Area  */}
 
+      {/* <Parallax
+        className="rn-testimonial-area rn-paralax-testimonial  rn-testimonial-light"
+        bgImage={image7}
+        strength={500}
+        data-black-overlay="5"
+      >
+        <div className="testimonial-area ptb--120" data-black-overlay="6">
+          <div className="container">
+            <Testimonial />
+          </div>
+        </div>
+      </Parallax> */}
+
       {/* Start Service Area  */}
-      <Parallax
+      {/* <Parallax
         className="rn-paralax-portfolio"
         bgImage={image2}
         strength={500}
@@ -157,7 +149,6 @@ const Home = () => {
               </div>
             </div>
             <div className="row">
-              {/* Start Single Portfolio  */}
               {PortfolioList.map((value, index) => (
                 <div
                   className="col-lg-4 col-md-6 col-sm-6 col-12 mt--40"
@@ -188,15 +179,14 @@ const Home = () => {
                   </div>
                 </div>
               ))}
-              {/* End Single Portfolio  */}
             </div>
           </div>
         </div>
-      </Parallax>
+      </Parallax> */}
       {/* End Service Area  */}
 
       {/* Start CounterUp Area */}
-      <Parallax
+      {/* <Parallax
         className="rn-counterup-area rn-paralax-counterup"
         bgImage={image6}
         strength={1000}
@@ -213,11 +203,11 @@ const Home = () => {
             <CounterOne />
           </div>
         </div>
-      </Parallax>
+      </Parallax> */}
       {/* End CounterUp Area */}
 
       {/* Start Testimonial Area */}
-      <Parallax
+      {/* <Parallax
         className="rn-testimonial-area rn-paralax-testimonial  rn-testimonial-light"
         bgImage={image7}
         strength={500}
@@ -228,11 +218,11 @@ const Home = () => {
             <Testimonial />
           </div>
         </div>
-      </Parallax>
+      </Parallax> */}
       {/* End Testimonial Area */}
 
       {/* Start Blog Area */}
-      <Parallax
+      {/* <Parallax
         className="rn-blog-area rn-testimonial-light"
         bgImage={image8}
         strength={700}
@@ -281,11 +271,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </Parallax>
+      </Parallax> */}
       {/* End Blog Area */}
 
       {/* Start Brand Area */}
-      <Parallax
+      {/* <Parallax
         className="rn-brand-area brand-separation ptb--120"
         bgImage={image3}
         strength={1000}
@@ -299,7 +289,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </Parallax>
+      </Parallax> */}
       {/* End Brand Area */}
 
       {/* Start Back To Top */}

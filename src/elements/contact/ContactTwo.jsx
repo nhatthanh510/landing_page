@@ -10,8 +10,9 @@ const ContactTwo = () => {
             <div className="section-title text-left mb--50">
               <h2 className="title">Contact Us.</h2>
               <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto cupiditate aperiam neque.
+                Reach out to us for any inquiries, assistance, or collaboration
+                opportunities. Our team is here to address your questions and
+                provide support. Let's connect and make things happen!"
               </p>
             </div>
             <div className="form-wrapper">

@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from 'react-router-dom'
 import { FiX, FiMenu } from 'react-icons/fi'
-import logoSymbolLight from '../../assets/images/logo/logo-symbol-light.png'
+import logoSymbolLight from '../../assets/images/logo/logo_custom.png'
 
 const Header = (props) => {
   const menuTrigger = () => {
@@ -37,16 +38,10 @@ const Header = (props) => {
           <nav className="mainmenunav d-lg-block">
             <ul className="mainmenu">
               <li>
-                <Link to="/service">Service</Link>
+                <Link to="/service">Our Services</Link>
               </li>
               <li>
-                <Link to="/testimonials">Testimonials</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/our-customer">Customers</Link>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>
@@ -54,8 +49,8 @@ const Header = (props) => {
             </ul>
           </nav>
           <div className="header-btn">
-            <a className="rn-btn" href="https://www.google.com/">
-              <span>Call to Action</span>
+            <a className="rn-btn" href="#">
+              <span>Learn More!</span>
             </a>
           </div>
           {/* Start Humberger Menu  */}

@@ -1,41 +1,24 @@
-import { FiCast, FiLayers, FiUsers, FiMonitor } from 'react-icons/fi'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { FiCode, FiLayers, FiMonitor } from 'react-icons/fi'
 
 const ServiceList = [
-  {
-    icon: <FiCast />,
-    title: 'Business Stratagy',
-    description:
-      'I throw myself down among the tall grass by the stream as I lie close to the earth.',
-  },
   {
     icon: <FiLayers />,
     title: 'Website Development',
     description:
-      'I throw myself down among the tall grass by the stream as I lie close to the earth.',
-  },
-  {
-    icon: <FiUsers />,
-    title: 'Marketing & Reporting',
-    description:
-      'I throw myself down among the tall grass by the stream as I lie close to the earth.',
+      'We help you develop your website to reach potential clients in the near future!',
   },
   {
     icon: <FiMonitor />,
-    title: 'Mobile App Development',
+    title: 'Application Development',
     description:
-      'I throw myself down among the tall grass by the stream as I lie close to the earth.',
+      'Let people feel the ease when reaching out to your product via application.',
   },
   {
-    icon: <FiUsers />,
-    title: 'Marketing & Reporting',
+    icon: <FiCode />,
+    title: 'UI/UX Design',
     description:
-      'I throw myself down among the tall grass by the stream as I lie close to the earth.',
-  },
-  {
-    icon: <FiMonitor />,
-    title: 'Mobile App Development',
-    description:
-      'I throw myself down among the tall grass by the stream as I lie close to the earth.',
+      'Let people experience their world while using unique and stunning UI/UX designs!',
   },
 ]
 
@@ -47,8 +30,8 @@ const ServiceThree = (props) => {
       <div className="row">
         {ServiceContent.map((val, i) => (
           <div className={`${column}`} key={i}>
-            <a href="/service-details">
-              <div className="service service__style--2">
+            <a href="#">
+              <div className="service service__style--2 text-center">
                 <div className="icon">{val.icon}</div>
                 <div className="content">
                   <h3 className="title">{val.title}</h3>

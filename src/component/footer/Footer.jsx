@@ -13,6 +13,11 @@ const SocialShare = [
 ]
 
 const Footer = () => {
+  const sendEmail = (e) => {
+    e.preventDefault()
+    const email = 'rmh.business.kaarey@gmail.com'
+    window.location.href = `mailto:${email}`
+  }
   return (
     <>
       <footer className="footer-area">
@@ -25,7 +30,11 @@ const Footer = () => {
                   <h2>
                     Let's get <br /> to work
                   </h2>
-                  <a className="rn-button-style--2" href="/contact">
+                  <a
+                    className="rn-button-style--2"
+                    href="/contact"
+                    onClick={sendEmail}
+                  >
                     <span>Contact Us</span>
                   </a>
                 </div>
@@ -39,9 +48,6 @@ const Footer = () => {
                     <div className="footer-link">
                       <h4>Quick Link</h4>
                       <ul className="ft-link">
-                        <li>
-                          <a href="/testimonials">Work</a>
-                        </li>
                         <li>
                           <a href="/about">About</a>
                         </li>
@@ -58,12 +64,9 @@ const Footer = () => {
                       <h4>Say Hello</h4>
                       <ul className="ft-link">
                         <li>
-                          <a href="mailto:admin@example.com">
-                            admin@example.com
+                          <a href="mailto:rmh.business.kaarey@gmail.com">
+                            rmh.business.kaarey@gmail.com
                           </a>
-                        </li>
-                        <li>
-                          <a href="mailto:hr@example.com">hr@example.com</a>
                         </li>
                       </ul>
 
@@ -82,7 +85,10 @@ const Footer = () => {
 
                   <div className="col-lg-12">
                     <div className="copyright-text">
-                      <p>Copyright © 2023 Google. All Rights Reserved.</p>
+                      <p>
+                        Copyright © 2023 Upgrow Software Studio. All Rights
+                        Reserved.
+                      </p>
                     </div>
                   </div>
                 </div>

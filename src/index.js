@@ -5,8 +5,6 @@ import Service from './elements/Service'
 import ServiceDetails from './elements/ServiceDetails'
 import Contact from './elements/Contact'
 import About from './elements/About'
-import OurClient from './elements/OurClient'
-import FullTestimonial from './elements/FullTestimonial'
 import PortfolioDetails from './elements/PortfolioDetails'
 import Error404 from './elements/error404'
 import reportWebVitals from './reportWebVitals'
@@ -37,14 +35,14 @@ const router = createBrowserRouter([
     path: '/about',
     element: <About />,
   },
-  {
-    path: '/our-customer',
-    element: <OurClient />,
-  },
-  {
-    path: '/testimonials',
-    element: <FullTestimonial />,
-  },
+  // {
+  //   path: '/our-customer',
+  //   element: <OurClient />,
+  // },
+  // {
+  //   path: '/testimonials',
+  //   element: <FullTestimonial />,
+  // },
   {
     path: '/portfolio-details',
     element: <PortfolioDetails />,

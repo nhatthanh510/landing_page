@@ -1,23 +1,15 @@
 import React from 'react'
 import PageHelmet from '../component/common/Helmet'
 import Breadcrumb from '../elements/common/Breadcrumb'
-import CounterOne from '../elements/counters/CounterOne'
-import BrandTwo from '../elements/BrandTwo'
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import ScrollToTop from 'react-scroll-up'
 import { FiChevronUp } from 'react-icons/fi'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 import about3 from '../assets/images/about/about-3.jpg'
-import findingUs01 from '../assets/images/about/finding-us-01.png'
-import team01 from '../assets/images/team/team-01.jpg'
-import team02 from '../assets/images/team/team-02.jpg'
-import team03 from '../assets/images/team/team-03.jpg'
 
 const About = () => {
   const title = 'About'
-  const description =
-    'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going.'
+  const description = `Welcome to Upgrow Software Studio, where innovation meets dedication. As one of Indonesia's foremost agencies, we are passionate about shaping the digital landscape. Our core expertise lies in developing cutting-edge software, crafting visually stunning websites, and enhancing user experiences through exceptional UI/UX design. Join hands with Upgrow today, and together, we'll make your digital aspirations a reality.`
   return (
     <>
       <PageHelmet pageTitle="About" />
@@ -47,26 +39,6 @@ const About = () => {
                     <h2 className="title">{title}</h2>
                     <p className="description">{description}</p>
                   </div>
-                  <div className="row mt--30">
-                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                      <div className="about-us-list">
-                        <h3 className="title">Who we are</h3>
-                        <p>
-                          There are many vtions of passages of Lorem Ipsum
-                          available, but the majority have suffered.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                      <div className="about-us-list">
-                        <h3 className="title">Who we are</h3>
-                        <p>
-                          There are many vtions of passages of Lorem Ipsum
-                          available, but the majority have suffered.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -76,7 +48,7 @@ const About = () => {
       {/* End About Area  */}
 
       {/* Start CounterUp Area */}
-      <div className="rn-counterup-area pb--120 bg_color--1">
+      {/* <div className="rn-counterup-area pb--120 bg_color--1">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -87,11 +59,11 @@ const About = () => {
           </div>
           <CounterOne />
         </div>
-      </div>
+      </div> */}
       {/* End CounterUp Area */}
 
       {/* Start Finding Us Area  */}
-      <div className="rn-finding-us-area rn-finding-us bg_color--1">
+      {/* <div className="rn-finding-us-area rn-finding-us bg_color--1">
         <div className="inner">
           <div className="content-wrapper">
             <div className="content">
@@ -112,123 +84,15 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End Finding Us Area  */}
 
       {/* Start Team Area  */}
-      <div className="rn-team-area bg_color--1 ptb--120">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="section-title service-style--3 text-center mb--25">
-                <h2 className="title">Skilled Team</h2>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            {/* Start Single Team  */}
-            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <div className="team">
-                <div className="thumbnail">
-                  <img className="w-100" src={team01} alt="Blog Images" />
-                </div>
-                <div className="content">
-                  <h4 className="title">Jone Due</h4>
-                  <p className="designation">Sr. Web Developer</p>
-                </div>
-                <ul className="social-icon">
-                  <li>
-                    <a href="https://www.facebook.com/">
-                      <FaFacebookF />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://linkedin.com/">
-                      <FaLinkedinIn />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/">
-                      <FaTwitter />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* End Single Team  */}
 
-            {/* Start Single Team  */}
-            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <div className="team">
-                <div className="thumbnail">
-                  <img className="w-100" src={team02} alt="Blog Images" />
-                </div>
-                <div className="content">
-                  <h4 className="title">BM. Alamin</h4>
-                  <p className="designation">Sr. Web Developer</p>
-                </div>
-                <ul className="social-icon">
-                  <li>
-                    <a href="https://www.facebook.com/">
-                      <FaFacebookF />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://linkedin.com/">
-                      <FaLinkedinIn />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/">
-                      <FaTwitter />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* End Single Team  */}
-
-            {/* Start Single Team  */}
-            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <div className="team">
-                <div className="thumbnail">
-                  <img className="w-100" src={team03} alt="Blog Images" />
-                </div>
-                <div className="content">
-                  <h4 className="title">Jone Due</h4>
-                  <p className="designation">Sr. Web Developer</p>
-                </div>
-                <ul className="social-icon">
-                  <li>
-                    <a href="https://www.facebook.com/">
-                      <FaFacebookF />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://linkedin.com/">
-                      <FaLinkedinIn />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/">
-                      <FaTwitter />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* End Single Team  */}
-          </div>
-        </div>
-      </div>
       {/* End Team Area  */}
 
       {/* Start Brand Area */}
-      <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
+      {/* <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -236,7 +100,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End Brand Area */}
 
       {/* Start Back To Top */}
