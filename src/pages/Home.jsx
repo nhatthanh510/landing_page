@@ -5,6 +5,7 @@ import Helmet from '../component/common/Helmet'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 import ServiceList from '../elements/service/ServiceList'
+import Team from '../elements/Team'
 import sliderImage from '../assets/images/bg/bg-image-11.jpg'
 import image1 from '../assets/images/bg/paralax/bg-image-2.jpg'
 
@@ -114,6 +115,24 @@ const Home = () => {
           </div>
         </div>
       </Parallax>
+
+      <div className="rn-team-area ptb--120 bg_color--1">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title service-style--3 text-center mb--25 mb_sm--0">
+                <h2 className="title">Skilled Team</h2>
+                <p>
+                  Discover the dynamic individuals who fuel our collective drive
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <Team column="col-lg-3 col-md-4 col-sm-6 col-12" />
+          </div>
+        </div>
+      </div>
       {/* End Service Area  */}
 
       {/* <Parallax
@@ -205,6 +224,21 @@ const Home = () => {
         </div>
       </Parallax> */}
       {/* End CounterUp Area */}
+
+      {/* Start Testimonial Area */}
+      {/* <Parallax
+        className="rn-testimonial-area rn-paralax-testimonial  rn-testimonial-light"
+        bgImage={image7}
+        strength={500}
+        data-black-overlay="5"
+      >
+        <div className="testimonial-area ptb--120" data-black-overlay="6">
+          <div className="container">
+            <Testimonial />
+          </div>
+        </div>
+      </Parallax> */}
+      {/* End Testimonial Area */}
 
       {/* Start Testimonial Area */}
       {/* <Parallax
