@@ -26,6 +26,7 @@ const ServiceList = [
     title: 'Custom Solutions',
     description:
       'We strive to meet the unique needs of our customers by offering customized solutions.',
+    height: '355px',
   },
   {
     icon: <AiOutlineSafety />,
@@ -44,7 +45,11 @@ const ServiceThree = (props) => {
         {ServiceContent.map((val, i) => (
           <div className={`${column}`} key={i}>
             <a href="#">
-              <div className="service service__style--2 text-center">
+              <div
+                className={`service service__style--2 text-center ${
+                  val.height ? 'custom-height' : ''
+                }`}
+              >
                 <div className="icon">{val.icon}</div>
                 <div className="content">
                   <h3 className="title">{val.title}</h3>

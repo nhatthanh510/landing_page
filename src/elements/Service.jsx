@@ -71,7 +71,7 @@ const Service = () => {
           <div className="row service-one-wrapper">
             {ServiceList.map((val, i) => (
               <div
-                className="col-xl-6 col-lg-4 col-md-6 col-sm-6 col-12 text-center"
+                className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center"
                 key={i}
               >
                 <Link to="#">
