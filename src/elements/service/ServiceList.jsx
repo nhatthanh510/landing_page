@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { FiCode, FiLayers, FiMonitor } from 'react-icons/fi'
+import { AiOutlineSafety, AiOutlineSolution } from 'react-icons/ai'
 
 const ServiceList = [
   {
@@ -19,6 +20,18 @@ const ServiceList = [
     title: 'UI/UX Design',
     description:
       'Let people experience their world while using unique and stunning UI/UX designs!',
+  },
+  {
+    icon: <AiOutlineSolution />,
+    title: 'Custom Solutions',
+    description:
+      'We strive to meet the unique needs of our customers by offering customized solutions.',
+  },
+  {
+    icon: <AiOutlineSafety />,
+    title: 'Quality Assurance',
+    description:
+      'Quality assurance is one of the key services we specialize in, dedicated to ensuring the highest standards in software development and testing.',
   },
 ]
 

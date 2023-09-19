@@ -11,19 +11,19 @@ const CounterOne = () => {
   }
   const data = [
     {
-      countNum: 100,
+      countNum: 20,
       countTitle: 'Project Complete.',
     },
     {
-      countNum: 50,
+      countNum: 12,
       countTitle: 'Happy Client',
     },
     {
-      countNum: 10,
+      countNum: 2,
       countTitle: 'Years Experience',
     },
     {
-      countNum: 50,
+      countNum: 5,
       countTitle: 'Win Award',
     },
   ]
