@@ -11,19 +11,20 @@ const CounterOne = () => {
   }
   const data = [
     {
-      countNum: 199,
-      countTitle:
-        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.',
+      countNum: 100,
+      countTitle: 'Project Complete.',
     },
     {
-      countNum: 575,
-      countTitle:
-        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.',
+      countNum: 50,
+      countTitle: 'Happy Client',
     },
     {
-      countNum: 69,
-      countTitle:
-        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.',
+      countNum: 10,
+      countTitle: 'Years Experience',
+    },
+    {
+      countNum: 50,
+      countTitle: 'Win Award',
     },
   ]
 
@@ -31,7 +32,7 @@ const CounterOne = () => {
     <div className="row">
       {data.map((value, index) => (
         <div
-          className="counterup_style--1 col-lg-4 col-md-4 col-sm-6 col-12"
+          className="counterup_style--1 col-lg-3 col-md-3 col-sm-6 col-12"
           key={index}
         >
           <h5 className="counter">

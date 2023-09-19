@@ -8,6 +8,8 @@ import ServiceList from '../elements/service/ServiceList'
 import Team from '../elements/Team'
 import sliderImage from '../assets/images/bg/bg-image-11.jpg'
 import image1 from '../assets/images/bg/paralax/bg-image-2.jpg'
+import image6 from '../assets/images/bg/paralax/bg-image-6.jpg'
+import CounterOne from '../elements/counters/CounterOne'
 
 const SlideList = [
   {
@@ -116,6 +118,27 @@ const Home = () => {
         </div>
       </Parallax>
 
+      {/* Start CounterUp Area */}
+      <Parallax
+        className="rn-counterup-area rn-paralax-counterup"
+        bgImage={image6}
+        strength={1000}
+      >
+        <div className="counterup-area ptb--120">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
+                  <h3>Our Fun Facts</h3>
+                </div>
+              </div>
+            </div>
+            <CounterOne />
+          </div>
+        </div>
+      </Parallax>
+      {/* End CounterUp Area */}
+
       <div className="rn-team-area ptb--120 bg_color--1">
         <div className="container">
           <div className="row">
@@ -203,27 +226,6 @@ const Home = () => {
         </div>
       </Parallax> */}
       {/* End Service Area  */}
-
-      {/* Start CounterUp Area */}
-      {/* <Parallax
-        className="rn-counterup-area rn-paralax-counterup"
-        bgImage={image6}
-        strength={1000}
-      >
-        <div className="counterup-area ptb--120">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
-                  <h3>Our Fun Facts</h3>
-                </div>
-              </div>
-            </div>
-            <CounterOne />
-          </div>
-        </div>
-      </Parallax> */}
-      {/* End CounterUp Area */}
 
       {/* Start Testimonial Area */}
       {/* <Parallax

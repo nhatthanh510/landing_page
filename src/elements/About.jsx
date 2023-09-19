@@ -1,6 +1,7 @@
 import React from 'react'
 import PageHelmet from '../component/common/Helmet'
 import Breadcrumb from '../elements/common/Breadcrumb'
+import CounterOne from '../elements/counters/CounterOne'
 import ScrollToTop from 'react-scroll-up'
 import { FiChevronUp } from 'react-icons/fi'
 import Header from '../component/header/Header'
@@ -48,7 +49,7 @@ const About = () => {
       {/* End About Area  */}
 
       {/* Start CounterUp Area */}
-      {/* <div className="rn-counterup-area pb--120 bg_color--1">
+      <div className="rn-counterup-area pb--120 bg_color--1">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -59,7 +60,7 @@ const About = () => {
           </div>
           <CounterOne />
         </div>
-      </div> */}
+      </div>
       {/* End CounterUp Area */}
 
       {/* Start Finding Us Area  */}
