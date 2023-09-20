@@ -5,6 +5,8 @@ import Service from './elements/Service'
 import ServiceDetails from './elements/ServiceDetails'
 import Contact from './elements/Contact'
 import About from './elements/About'
+import Blog from './elements/Blog'
+import BlogDetails from './elements/BlogDetails'
 import Team from './blocks/Team'
 import PortfolioDetails from './elements/PortfolioDetails'
 import Error404 from './elements/error404'
@@ -52,7 +54,14 @@ const router = createBrowserRouter([
     path: '/team',
     element: <Team />,
   },
-
+  {
+    path: '/blogs',
+    element: <Blog />,
+  },
+  {
+    path: '/blog/:id',
+    element: <BlogDetails />,
+  },
   {
     path: '*',
     element: <Error404 />,

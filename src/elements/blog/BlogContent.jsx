@@ -1,34 +1,34 @@
 const BlogContent = [
   {
     images: '01',
-    title: ' Getting tickets to the big show',
-    category: 'Development',
+    title: 'Aptos Labs adds Coinbase Pay to its Petra crypto wallet',
+    category: 'Crypto',
   },
   {
     images: '02',
-    title: 'A big ticket gone to be an interesting ',
-    category: 'Management',
+    title: 'Even Airbnb properties are getting a checkmark',
+    category: 'Startups',
   },
 
   {
     images: '03',
-    title: 'The Home of the Future Could Bebes',
-    category: 'Design',
+    title: 'Corti, an AI ‘co-pilot’ for healthcare clinicians, raises $60M',
+    category: 'Biotech & Health',
   },
   {
     images: '04',
-    title: ' Getting tickets to the big show',
-    category: 'Development',
+    title: 'VSCO gains former Figma COO Eric Wittman as its new CEO',
+    category: 'Apps',
   },
   {
-    images: '01',
-    title: 'A big ticket gone to be an interesting ',
-    category: 'Management',
+    images: '05',
+    title: 'DOJ investigates Elon Musk perks at Tesla',
+    category: 'Transportation',
   },
   {
-    images: '02',
-    title: 'The Home of the Future Could Bebes',
-    category: 'Design',
+    images: '06',
+    title: 'You can now FaceTime from your Apple TV 4K',
+    category: 'Apps',
   },
 ]
 
