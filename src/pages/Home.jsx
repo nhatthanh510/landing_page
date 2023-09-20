@@ -5,10 +5,11 @@ import Helmet from '../component/common/Helmet'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 import ServiceList from '../elements/service/ServiceList'
-import Team from '../elements/Team'
+import BlogHomePage from '../elements/BlogHomePage'
 import sliderImage from '../assets/images/bg/bg-image-11.jpg'
 import image1 from '../assets/images/bg/paralax/bg-image-2.jpg'
 import image6 from '../assets/images/bg/paralax/bg-image-6.jpg'
+import image8 from '../assets/images/bg/paralax/bg-image-8.jpg'
 import CounterOne from '../elements/counters/CounterOne'
 
 const SlideList = [
@@ -139,23 +140,6 @@ const Home = () => {
       </Parallax>
       {/* End CounterUp Area */}
 
-      <div className="rn-team-area ptb--120 bg_color--1">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="section-title service-style--3 text-center mb--25 mb_sm--0">
-                <h2 className="title">Skilled Team</h2>
-                <p>
-                  Discover the dynamic individuals who fuel our collective drive
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <Team column="col-lg-3 col-md-4 col-sm-6 col-12" />
-          </div>
-        </div>
-      </div>
       {/* End Service Area  */}
 
       {/* <Parallax
@@ -258,7 +242,7 @@ const Home = () => {
       {/* End Testimonial Area */}
 
       {/* Start Blog Area */}
-      {/* <Parallax
+      <Parallax
         className="rn-blog-area rn-testimonial-light"
         bgImage={image8}
         strength={700}
@@ -271,43 +255,19 @@ const Home = () => {
                 <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
                   <h2>Latest News</h2>
                   <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration.
+                    Stay updated with our latest news section, providing timely
+                    and relevant updates on current events, trends, and
+                    important happenings from around the world.
                   </p>
                 </div>
               </div>
             </div>
             <div className="row">
-              {PostList.map((value, i) => (
-                <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
-                  <div className="blog blog-style--1 mb--0 mt--40">
-                    <div className="thumbnail">
-                      <a href="/blog-details">
-                        <img
-                          className="w-100"
-                          src={imageMap[`blog${i + 1}`]}
-                          alt="Blog Images"
-                        />
-                      </a>
-                    </div>
-                    <div className="content">
-                      <p className="blogtype">{value.category}</p>
-                      <h4 className="title">
-                        <a href="/blog-details">{value.title}</a>
-                      </h4>
-                      <div className="blog-btn">
-                        <a className="rn-btn text-white" href="/blog-details">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
+              <BlogHomePage />
             </div>
           </div>
         </div>
-      </Parallax> */}
+      </Parallax>
       {/* End Blog Area */}
 
       {/* Start Brand Area */}

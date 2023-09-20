@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from 'react-router-dom'
 import { FiX, FiMenu } from 'react-icons/fi'
-import logoSymbolLight from '../../assets/images/logo/logo_custom.png'
+import newLogoWhiteTransparent from '../../assets/images/logo/new_logo-white-transparent.svg'
 
 const Header = (props) => {
   const menuTrigger = () => {
@@ -22,7 +22,9 @@ const Header = (props) => {
     }
   }
   const { color = 'default-color' } = props
-  let logoUrl = <img src={logoSymbolLight} alt="Digital Agency" />
+  let logoUrl = (
+    <img width={300} src={newLogoWhiteTransparent} alt="Digital Agency" />
+  )
 
   return (
     <header
@@ -40,9 +42,9 @@ const Header = (props) => {
               <li>
                 <Link to="/service">Our Services</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/team">Our Team</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/blogs">Blogs</Link>
               </li>

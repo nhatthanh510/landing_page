@@ -7,7 +7,6 @@ import Contact from './elements/Contact'
 import About from './elements/About'
 import Blog from './elements/Blog'
 import BlogDetails from './elements/BlogDetails'
-import Team from './blocks/Team'
 import PortfolioDetails from './elements/PortfolioDetails'
 import Error404 from './elements/error404'
 import reportWebVitals from './reportWebVitals'
@@ -50,10 +49,10 @@ const router = createBrowserRouter([
     path: '/portfolio-details',
     element: <PortfolioDetails />,
   },
-  {
-    path: '/team',
-    element: <Team />,
-  },
+  // {
+  //   path: '/team',
+  //   element: <Team />,
+  // },
   {
     path: '/blogs',
     element: <Blog />,
