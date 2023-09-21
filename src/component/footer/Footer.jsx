@@ -1,15 +1,10 @@
-import {
-  FaTwitter,
-  FaInstagram,
-  FaFacebookF,
-  FaLinkedinIn,
-} from 'react-icons/fa'
+import { FaLinkedinIn } from 'react-icons/fa'
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: 'https://www.facebook.com/' },
-  { Social: <FaLinkedinIn />, link: 'https://www.linkedin.com/' },
-  { Social: <FaInstagram />, link: 'https://www.instagram.com/' },
-  { Social: <FaTwitter />, link: 'https://twitter.com/' },
+  {
+    Social: <FaLinkedinIn />,
+    link: 'https://www.linkedin.com/company/upgrow-software/',
+  },
 ]
 
 const Footer = () => {
@@ -74,7 +69,13 @@ const Footer = () => {
                         <ul className="social-share social-style--2 d-flex justify-content-start liststyle mt--15">
                           {SocialShare.map((val, i) => (
                             <li key={i}>
-                              <a href={`${val.link}`}>{val.Social}</a>
+                              <a
+                                href={`${val.link}`}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {val.Social}
+                              </a>
                             </li>
                           ))}
                         </ul>

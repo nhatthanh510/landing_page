@@ -12,7 +12,7 @@ const ContactTwo = () => {
               <p className="description">
                 Reach out to us for any inquiries, assistance, or collaboration
                 opportunities. Our team is here to address your questions and
-                provide support. Let's connect and make things happen!"
+                provide support. Let's connect and make things happen!
               </p>
             </div>
             <div className="form-wrapper">

@@ -179,7 +179,7 @@ const Blog3 = () => {
                     revenue and reduces costs,” added Atomico Partner Laura
                     Connell. “By augmenting overburdened physicians and
                     healthcare providers with AI, Corti paves the way for more
-                    personalized, preventative and proactive medicine.""
+                    personalized, preventative and proactive medicine."
                   </p>
                 </div>
               </div>
