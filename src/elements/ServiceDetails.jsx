@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import PageHelmet from '../component/common/Helmet'
 import ModalVideo from 'react-modal-video'
-import ScrollToTop from 'react-scroll-up'
-import { FiChevronUp } from 'react-icons/fi'
+import ScrollUp from '../component/common/ScrollUp'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 
@@ -158,11 +157,7 @@ const ServiceDetails = () => {
       {/* End Page Wrapper */}
 
       {/* Start Back To Top */}
-      <div className="backto-top">
-        <ScrollToTop showUnder={160}>
-          <FiChevronUp />
-        </ScrollToTop>
-      </div>
+      <ScrollUp />
       {/* End Back To Top */}
 
       <Footer />

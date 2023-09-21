@@ -1,10 +1,10 @@
 import React from 'react'
 import PageHelmet from '../component/common/Helmet'
 import Breadcrumb from '../elements/common/Breadcrumb'
-import { FiCode, FiLayers, FiMonitor, FiChevronUp } from 'react-icons/fi'
+import { FiCode, FiLayers, FiMonitor } from 'react-icons/fi'
 import { AiOutlineSafety, AiOutlineSolution } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
-import ScrollToTop from 'react-scroll-up'
+import ScrollUp from '../component/common/ScrollUp'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 
@@ -91,11 +91,7 @@ const Service = () => {
       {/* End Service Area */}
 
       {/* Start Back To Top */}
-      <div className="backto-top">
-        <ScrollToTop showUnder={160}>
-          <FiChevronUp />
-        </ScrollToTop>
-      </div>
+      <ScrollUp />
       {/* End Back To Top */}
 
       <Footer />

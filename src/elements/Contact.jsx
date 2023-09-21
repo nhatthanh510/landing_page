@@ -2,8 +2,7 @@ import React from 'react'
 import PageHelmet from '../component/common/Helmet'
 import { FiHeadphones, FiMail, FiMapPin } from 'react-icons/fi'
 import ContactTwo from '../elements/contact/ContactTwo'
-import ScrollToTop from 'react-scroll-up'
-import { FiChevronUp } from 'react-icons/fi'
+import ScrollUp from '../component/common/ScrollUp'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 import bg17 from '../assets/images/bg/bg-image-17.jpg'
@@ -133,11 +132,7 @@ const Contact = (props) => {
       {/* End Brand Area */}
 
       {/* Start Back To Top */}
-      <div className="backto-top">
-        <ScrollToTop showUnder={160}>
-          <FiChevronUp />
-        </ScrollToTop>
-      </div>
+      <ScrollUp />
       {/* End Back To Top */}
 
       <Footer />

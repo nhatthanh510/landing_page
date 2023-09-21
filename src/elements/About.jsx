@@ -2,8 +2,7 @@ import React from 'react'
 import PageHelmet from '../component/common/Helmet'
 import Breadcrumb from '../elements/common/Breadcrumb'
 import CounterOne from '../elements/counters/CounterOne'
-import ScrollToTop from 'react-scroll-up'
-import { FiChevronUp } from 'react-icons/fi'
+import ScrollUp from '../component/common/ScrollUp'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 import about3 from '../assets/images/about/about-3.jpg'
@@ -128,11 +127,7 @@ const About = () => {
       {/* End Brand Area */}
 
       {/* Start Back To Top */}
-      <div className="backto-top">
-        <ScrollToTop showUnder={160}>
-          <FiChevronUp />
-        </ScrollToTop>
-      </div>
+      <ScrollUp />
       {/* End Back To Top */}
 
       <Footer />

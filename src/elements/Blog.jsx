@@ -3,8 +3,7 @@ import PageHelmet from '../component/common/Helmet'
 import Breadcrumb from '../elements/common/Breadcrumb'
 import Pagination from '../elements/common/Pagination'
 import BlogList from '../elements/blog/BlogList'
-import ScrollToTop from 'react-scroll-up'
-import { FiChevronUp } from 'react-icons/fi'
+import ScrollUp from '../component/common/ScrollUp'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 
@@ -38,11 +37,7 @@ const Blog = () => {
       {/* End Blog Area */}
 
       {/* Start Back To Top */}
-      <div className="backto-top">
-        <ScrollToTop showUnder={160}>
-          <FiChevronUp />
-        </ScrollToTop>
-      </div>
+      <ScrollUp />
       {/* End Back To Top */}
 
       <Footer />

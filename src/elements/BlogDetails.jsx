@@ -1,8 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import PageHelmet from '../component/common/Helmet'
-import ScrollToTop from 'react-scroll-up'
-import { FiChevronUp } from 'react-icons/fi'
+import ScrollUp from '../component/common/ScrollUp'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 import Blog1 from '../elements/static-blogs/Blog1'
@@ -33,11 +32,7 @@ const BlogDetails = () => {
       />
       <RenderComponent />
       {/* Start Back To Top */}
-      <div className="backto-top">
-        <ScrollToTop showUnder={160}>
-          <FiChevronUp />
-        </ScrollToTop>
-      </div>
+      <ScrollUp />
       {/* End Back To Top */}
       <Footer />
     </>

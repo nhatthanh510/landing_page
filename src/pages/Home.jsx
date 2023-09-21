@@ -1,6 +1,4 @@
 import { Parallax } from 'react-parallax'
-import ScrollToTop from 'react-scroll-up'
-import { FiChevronUp } from 'react-icons/fi'
 import Helmet from '../component/common/Helmet'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
@@ -11,6 +9,7 @@ import image1 from '../assets/images/bg/paralax/bg-image-2.jpg'
 import image6 from '../assets/images/bg/paralax/bg-image-6.jpg'
 import image8 from '../assets/images/bg/paralax/bg-image-8.jpg'
 import CounterOne from '../elements/counters/CounterOne'
+import ScrollUp from '../component/common/ScrollUp'
 
 const SlideList = [
   {
@@ -289,11 +288,7 @@ const Home = () => {
       {/* End Brand Area */}
 
       {/* Start Back To Top */}
-      <div className="backto-top">
-        <ScrollToTop showUnder={160}>
-          <FiChevronUp />
-        </ScrollToTop>
-      </div>
+      <ScrollUp />
       {/* End Back To Top */}
 
       <Footer />

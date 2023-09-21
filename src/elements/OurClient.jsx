@@ -1,7 +1,6 @@
 import React from 'react'
-import ScrollToTop from 'react-scroll-up'
+import ScrollUp from '../component/common/ScrollUp'
 import Breadcrumb from '../elements/common/Breadcrumb'
-import { FiChevronUp } from 'react-icons/fi'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 import Brand from '../elements/Brand'
@@ -49,11 +48,7 @@ const OurClient = () => {
       <Footer />
       {/* End Footer Area  */}
       {/* Start Back To Top */}
-      <div className="backto-top">
-        <ScrollToTop showUnder={160}>
-          <FiChevronUp />
-        </ScrollToTop>
-      </div>
+      <ScrollUp />
       {/* End Back To Top */}
     </>
   )

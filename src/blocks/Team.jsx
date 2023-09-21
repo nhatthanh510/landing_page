@@ -2,10 +2,9 @@ import React from 'react'
 import TeamOne from './team/TeamOne'
 import PageHelmet from '../component/common/Helmet'
 import Breadcrumb from '../elements/common/Breadcrumb'
-import ScrollToTop from 'react-scroll-up'
-import { FiChevronUp } from 'react-icons/fi'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
+import ScrollUp from '../component/common/ScrollUp'
 
 const Team = () => {
   return (
@@ -56,11 +55,7 @@ const Team = () => {
       {/* End Page Wrapper  */}
 
       {/* Start Back To Top */}
-      <div className="backto-top">
-        <ScrollToTop showUnder={160}>
-          <FiChevronUp />
-        </ScrollToTop>
-      </div>
+      <ScrollUp />
       {/* End Back To Top */}
 
       {/* Start Footer Area  */}
