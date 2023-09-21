@@ -7,10 +7,13 @@ import { FiChevronUp } from 'react-icons/fi'
 import Header from '../component/header/Header'
 import Footer from '../component/footer/Footer'
 import about3 from '../assets/images/about/about-3.jpg'
+import ceo from '../assets/images/about/about-ceo.jpg'
 
 const About = () => {
   const title = 'About'
   const description = `Welcome to Upgrow Software Studio, where innovation meets dedication. As one of Indonesia's foremost agencies, we are passionate about shaping the digital landscape. Our core expertise lies in developing cutting-edge software, crafting visually stunning websites, and enhancing user experiences through exceptional UI/UX design. Join hands with Upgrow today, and together, we'll make your digital aspirations a reality.`
+
+  const description2 = `"Unlock the power of technology for your business. We create code that doesn't just automate tasks but simplifies experiences, making your journey to professionalism smoother and more efficient."`
   return (
     <>
       <PageHelmet pageTitle="About" />
@@ -37,8 +40,28 @@ const About = () => {
               <div className="col-lg-7">
                 <div className="about-inner inner">
                   <div className="section-title">
-                    <h2 className="title">{title}</h2>
+                    <h3 className="title">{title}</h3>
                     <p className="description">{description}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rn-about-wrapper mt--60">
+          <div className="container">
+            <div className="row row--35 align-items-center">
+              <div className="col-lg-5">
+                <div className="thumbnail">
+                  <img className="w-100" src={ceo} alt="About Images" />
+                </div>
+              </div>
+              <div className="col-lg-7">
+                <div className="about-inner inner">
+                  <div className="section-title">
+                    <h3 className="title">CEO</h3>
+                    <h4 className="title">Raihan Hilmy Syahalam</h4>
+                    <p className="description">{description2}</p>
                   </div>
                 </div>
               </div>
