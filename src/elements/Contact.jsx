@@ -45,6 +45,24 @@ const Contact = (props) => {
         <div className="container">
           <div className="row">
             {/* Start Single Address  */}
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt_md--50 mt_sm--50">
+              <div className="rn-address">
+                <div className="icon">
+                  <FiMapPin />
+                </div>
+                <div className="inner">
+                  <h4 className="title">Location</h4>
+                  <p>
+                    PERUM MANGUNJAYA INDAH II, Mekarsari Village, Subdistrict
+                  </p>
+                  <br />
+                  <p>Tambun Selatan, Bekasi Regency, East Java. 17510</p>
+                </div>
+              </div>
+            </div>
+            {/* End Single Address  */}
+
+            {/* Start Single Address  */}
             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
               <div className="rn-address">
                 <div className="icon">
@@ -72,23 +90,6 @@ const Contact = (props) => {
                     <a href="mailto:rmh.business.kaarey@gmail.com">
                       rmh.business.kaarey@gmail.com
                     </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* End Single Address  */}
-
-            {/* Start Single Address  */}
-            <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt_md--50 mt_sm--50">
-              <div className="rn-address">
-                <div className="icon">
-                  <FiMapPin />
-                </div>
-                <div className="inner">
-                  <h4 className="title">Location</h4>
-                  <p>
-                    Perum. Mangunjaya Indah II, Bekasi, East Java, Indonesia.
-                    17510
                   </p>
                 </div>
               </div>
