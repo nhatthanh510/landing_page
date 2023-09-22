@@ -61,7 +61,7 @@ const Home = () => {
                       )}
                       <p className="description">
                         We specialize in turning your ideas into powerful
-                        software solutions and stunning websites.Test
+                        software solutions and stunning websites.
                       </p>
                       {value.description ? (
                         <p
